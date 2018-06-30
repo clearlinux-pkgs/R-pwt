@@ -1,0 +1,34 @@
+Changes in Version 7.1-1
+
+  o Added note about PWT 8.0 being available in a separate package: pwt8.
+
+
+Changes in Version 7.1-0
+
+  o Added pwt7.1 data for PWT 7.1 released July 2012.
+
+
+Changes in Version 7.0-1
+
+  o Added empty NAMESPACE for R 2.14.0.
+
+
+Changes in Version 7.0-0
+
+  o Added pwt7.0 data for PWT 7.0 released May 2011.
+
+
+Changes in Version 6.3-1
+
+  o Use improved compression for data files.
+
+
+Changes in Version 6.3-0
+
+  o Added pwt6.3 data for PWT 6.3 released August 2009.
+
+
+Changes in Version 6.2-2
+
+  o Enhanced CITATION file.
+
