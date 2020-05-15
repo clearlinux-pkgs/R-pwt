@@ -4,14 +4,13 @@
 #
 Name     : R-pwt
 Version  : 7.1.1
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/pwt_7.1-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pwt_7.1-1.tar.gz
 Summary  : Penn World Table (Versions 5.6, 6.x, 7.x)
 Group    : Development/Tools
 License  : GPL-2.0
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 national income accounts converted to international prices for
@@ -19,21 +18,22 @@ national income accounts converted to international prices for
 
 %prep
 %setup -q -c -n pwt
+cd %{_builddir}/pwt
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571881079
+export SOURCE_DATE_EPOCH=1589537701
 
 %install
-export SOURCE_DATE_EPOCH=1571881079
+export SOURCE_DATE_EPOCH=1589537701
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
