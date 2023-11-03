@@ -4,7 +4,7 @@
 #
 Name     : R-pwt
 Version  : 7.1.1
-Release  : 38
+Release  : 39
 URL      : https://cran.r-project.org/src/contrib/pwt_7.1-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pwt_7.1-1.tar.gz
 Summary  : Penn World Table (Versions 5.6, 6.x, 7.x)
